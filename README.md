@@ -1,4 +1,46 @@
-# Getting Started with Create React App
+# Propylon Assignment
+
+Frontend Engineer Assessment
+Objective
+Implement a web application UI that allows users view information about bills information from
+the following API:
+https://api.oireachtas.ie/
+The UI application should be built with the following tools:
+ React
+ Redux
+ Material UI
+ TypeScript
+The code should be checked into an accessible source code management tool and provide clear
+instructions for how to successfully run the solution in a development mode.
+The code in the submission should reflect your ideal of what professional software development
+entails. This may include things like ensuring formatting is consistent, adding appropriate
+commentary and documentation, and defining application structure.
+Requirements
+Functional
+ Create a table component for listing bill information.
+ Bill information should be paginated and show the following columns:
+ Bill number
+ Bill type
+ Bill status
+ Sponsor
+ Allow a user to filter bills by Bill type field.
+ Clicking on a bill row should show a modal window, with a tabbed component with two
+tabs that when clicked on display the following:
+ English – English language title
+ Gaeilge – Irish language title
+ Implement a favourite legislation functionality, whereby the user can click on an icon and
+“favourite a bill”. This click should change the UI and persist the change to state, but the
+call back to the server can be mocked. Opening a console log should show a message
+indicating the request to favourite a bill was dispatched to the server. Clicking the
+favourite button should “un-favourite” a bill.
+ Display all favourited bills on a separate tab of the main bill table component.
+
+Non-functional
+ Demonstrate knowledge React and Redux and best practices using this toolset
+ Demonstrate understanding of UI designs systems and basic styling of components.
+ Demonstrate ability to unit test a UI system component.
+ Demonstrate understanding of TypeScript and JavaScript fundamentals as well as the
+usage of automated code consistency tooling.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
