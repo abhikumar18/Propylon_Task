@@ -55,14 +55,21 @@ const billInfoSlice = createSlice({
     },
     toggleFavorite: (state, action) => {
       console.log("running");
-      const index = state.filteredBillInfo.findIndex(
+      const billIndex = state.billInfo.findIndex(
         (bill) => bill.billNo === action.payload
       );
-      if (index !== -1) {
-        state.filteredBillInfo[index].favorite =
-          !state.filteredBillInfo[index].favorite;
 
-        state.billInfo[index].favorite = !state.billInfo[index].favorite;
+      const filteredBillIndex = state.filteredBillInfo.findIndex(
+        (bill) => bill.billNo === action.payload
+      );
+
+      if (filteredBillIndex !== -1) {
+        state.filteredBillInfo[filteredBillIndex].favorite =
+          !state.filteredBillInfo[filteredBillIndex].favorite;
+      }
+
+      if (billIndex !== -1) {
+        state.billInfo[billIndex].favorite = !state.billInfo[billIndex].favorite;
       }
     },
   },

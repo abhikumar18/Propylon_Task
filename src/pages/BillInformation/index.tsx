@@ -47,7 +47,7 @@ const BillInformation = () => {
     (state: RootState) => state.billInfo
   );
 
-  const allFavoritedBills = filteredBillInfo.filter(
+  const allFavoritedBills = billInfo.filter(
     (bill: BillInfo) => bill.favorite
   );
 
